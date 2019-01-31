@@ -21,8 +21,8 @@ class ViewController: UIViewController {
     }
     
     func spawnPlayButton() {
-        let playButton = UIButton(frame: CGRect(x: Int.random(in: 1...325),
-                                                y: Int.random(in: 1...600),
+        let playButton = UIButton(frame: CGRect(x: Int.random(in: 1...275),
+                                                y: Int.random(in: 1...525),
                                                 width: 50,
                                                 height: 50))
         playButton.setTitle("tap", for: .normal)
