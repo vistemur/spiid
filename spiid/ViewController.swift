@@ -32,7 +32,7 @@ class ViewController: UIViewController {
     }
     
     @objc func playButtonAction(sender: UIButton!) {
-        sender.isHidden = true
+        sender.removeFromSuperview()
         spawnPlayButton()
     }
 }
