@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     
     public var score = 0
     public var game = false
+    public var amountOfButtonsOnSreen = 0;
     
     // TODO: startButtonPressed
     @IBAction func startButtunPressed(_ sender: UIButton) {
@@ -65,25 +66,29 @@ class ViewController: UIViewController {
         let width = self.view!.frame.width
         
         let playButton = UIButton(frame: CGRect(x: Int.random(in: 1...(Int(width) - 50)),
-                                                y: Int.random(in: 1...(Int(height) - 50)),
+                                                y: Int.random(in: 5...(Int(height) - 50)),
                                                 width: 50,
                                                 height: 50))
         playButton.setTitle("tap", for: .normal)
         playButton.backgroundColor = UIColor.red
         playButton.addTarget(self, action: #selector(playButtonAction), for: .touchUpInside)
         self.view.addSubview(playButton)
+        amountOfButtonsOnSreen += 1
     }
     
     // playButton is touched
     @objc func playButtonAction(sender: UIButton!) {
         if game {
             sender.removeFromSuperview()
-            spawnPlayButton()
-            score += 1
-            scoreLabel.text = "\(score)"
+            if amountOfButtonsOnSreen == 1 {
+                spawnPlayButton()
+                score += 1
+                scoreLabel.text = "\(score)"
+            }
         } else {
             sender.removeFromSuperview()
             game = false
         }
+        amountOfButtonsOnSreen -= 1
     }
 }
