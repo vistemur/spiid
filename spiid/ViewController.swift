@@ -9,23 +9,37 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    public var classicalHighScore = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
+    
     @IBOutlet weak var startPlayButton: UIButton!
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var classicalHighScoreLabel: UILabel!
     
-    public var score = 0
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if let x = UserDefaults.standard.object(forKey: "classicalHighScore") as? Int {
+            classicalHighScore = x
+            classicalHighScoreLabel.text = "High score \(classicalHighScore)"
+            classicalHighScoreLabel.transform = CGAffineTransform( rotationAngle: CGFloat((M_PI ) / 3) )
+        }
+    }
+    
+    public var classicalScore = 0
     public var game = false
     public var amountOfButtonsOnSreen = 0;
     
     // TODO: startButtonPressed
     @IBAction func startButtunPressed(_ sender: UIButton) {
-        score = 0
+        classicalScore = 0
         scoreLabel.isHidden = false
+        classicalHighScoreLabel.isHidden = true
         sender.isHidden = true
         spawnPlayButton()
         game = true
@@ -53,10 +67,17 @@ class ViewController: UIViewController {
     // ToDo: time is out
     func timeIsOut() {
         print("time is out")
-        timeLabel.text = "your score \(score)"
+        timeLabel.text = "your score \(classicalScore)"
         scoreLabel.isHidden = true
         startPlayButton.isHidden = false
+        classicalHighScoreLabel.isHidden = false
         game = false
+        if classicalScore > classicalHighScore {
+            classicalHighScore = classicalScore
+            UserDefaults.standard.set(classicalScore, forKey: "classicalHighScore")
+            classicalHighScoreLabel.text = "New record \(classicalScore)"
+        }
+        print("\(classicalHighScore)")
     }
     
     // TODO: spawn button (for game)
@@ -82,8 +103,8 @@ class ViewController: UIViewController {
             sender.removeFromSuperview()
             if amountOfButtonsOnSreen == 1 {
                 spawnPlayButton()
-                score += 1
-                scoreLabel.text = "\(score)"
+                classicalScore += 1
+                scoreLabel.text = "\(classicalScore)"
             }
         } else {
             sender.removeFromSuperview()

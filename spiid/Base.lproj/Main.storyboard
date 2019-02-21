@@ -18,17 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oaC-5D-UD8">
-                                <rect key="frame" x="275" y="567" width="100" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="ged-PD-zNH"/>
-                                    <constraint firstAttribute="width" constant="100" id="jGr-ai-Cgl"/>
-                                </constraints>
-                                <state key="normal" title="start"/>
-                                <connections>
-                                    <action selector="startButtunPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zqd-52-YYy"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYN-ZL-CFL">
                                 <rect key="frame" x="15" y="648" width="0.0" height="4"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -41,19 +30,39 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oaC-5D-UD8">
+                                <rect key="frame" x="137.5" y="283.5" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="ged-PD-zNH"/>
+                                    <constraint firstAttribute="width" constant="100" id="jGr-ai-Cgl"/>
+                                </constraints>
+                                <state key="normal" title="start"/>
+                                <connections>
+                                    <action selector="startButtunPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zqd-52-YYy"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C9E-S3-E6L">
+                                <rect key="frame" x="215" y="292" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.97617390641935842" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="x6K-lp-3Bg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="7jC-Tu-XWA"/>
                             <constraint firstAttribute="bottom" secondItem="eYN-ZL-CFL" secondAttribute="bottom" constant="15" id="9yg-ta-Hki"/>
                             <constraint firstItem="eYN-ZL-CFL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="15" id="BN2-Kz-H9m"/>
+                            <constraint firstItem="C9E-S3-E6L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="215" id="MmP-td-spZ"/>
                             <constraint firstItem="x6K-lp-3Bg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Omd-kW-Fjl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="C9E-S3-E6L" secondAttribute="bottom" constant="375" id="Wuc-fH-dD7"/>
                             <constraint firstItem="oaC-5D-UD8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="b8u-eA-A88"/>
                             <constraint firstItem="oaC-5D-UD8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="btv-GE-8Hc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="classicalHighScoreLabel" destination="C9E-S3-E6L" id="xVv-Ym-qNd"/>
                         <outlet property="scoreLabel" destination="eYN-ZL-CFL" id="yv6-8G-Q2r"/>
                         <outlet property="startPlayButton" destination="oaC-5D-UD8" id="HIX-XW-WUi"/>
                         <outlet property="timeLabel" destination="x6K-lp-3Bg" id="Nyj-YI-6Zb"/>
