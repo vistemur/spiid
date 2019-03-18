@@ -8,28 +8,33 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
     
-    public var classicalHighScore = 0
-
+    var classicalHighScore = 0
+    var savedSkin = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let x = UserDefaults.standard.object(forKey: "classicalHighScore") as? Int {
+            classicalHighScore = x
+        }
+            
+        classicalHighScoreLabel.text = "High score \(classicalHighScore)"
+        classicalHighScoreLabel.transform = CGAffineTransform( rotationAngle: CGFloat((Double.pi ) / 3) )
+        
+        if let x = UserDefaults.standard.object(forKey: "savedSkin") as? Int {
+            savedSkin = x
+        } else {
+            savedSkin = 0
+        }
     }
     
-    
+    @IBOutlet weak var skinsButton: UIButton!
     @IBOutlet weak var startPlayButton: UIButton!
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var classicalHighScoreLabel: UILabel!
-    
-    
-    override func viewDidAppear(_ animated: Bool) {
-        if let x = UserDefaults.standard.object(forKey: "classicalHighScore") as? Int {
-            classicalHighScore = x
-            classicalHighScoreLabel.text = "High score \(classicalHighScore)"
-            classicalHighScoreLabel.transform = CGAffineTransform( rotationAngle: CGFloat((M_PI ) / 3) )
-        }
-    }
     
     public var classicalScore = 0
     public var game = false
@@ -41,6 +46,7 @@ class ViewController: UIViewController {
         scoreLabel.isHidden = false
         classicalHighScoreLabel.isHidden = true
         sender.isHidden = true
+        skinsButton.isHidden = true
         spawnPlayButton()
         game = true
         
@@ -66,10 +72,10 @@ class ViewController: UIViewController {
     
     // ToDo: time is out
     func timeIsOut() {
-        print("time is out")
         timeLabel.text = "your score \(classicalScore)"
         scoreLabel.isHidden = true
         startPlayButton.isHidden = false
+        skinsButton.isHidden = false
         classicalHighScoreLabel.isHidden = false
         game = false
         if classicalScore > classicalHighScore {
@@ -77,7 +83,6 @@ class ViewController: UIViewController {
             UserDefaults.standard.set(classicalScore, forKey: "classicalHighScore")
             classicalHighScoreLabel.text = "New record \(classicalScore)"
         }
-        print("\(classicalHighScore)")
     }
     
     // TODO: spawn button (for game)
@@ -111,5 +116,13 @@ class ViewController: UIViewController {
             game = false
         }
         amountOfButtonsOnSreen -= 1
+    }
+}
+
+extension ViewController: BDelegate {
+    func valueChanged(newValue: Int) {
+        savedSkin = newValue
+        UserDefaults.standard.set(savedSkin, forKey: "savedSkin")
+        print(savedSkin)
     }
 }

@@ -10,9 +10,9 @@
 		08563E552203B493001FA27F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08563E542203B493001FA27F /* AppDelegate.swift */; };
 		08563E572203B493001FA27F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08563E562203B493001FA27F /* ViewController.swift */; };
 		08563E5A2203B493001FA27F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08563E582203B493001FA27F /* Main.storyboard */; };
-		08563E5D2203B493001FA27F /* spiid.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 08563E5B2203B493001FA27F /* spiid.xcdatamodeld */; };
 		08563E5F2203B496001FA27F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08563E5E2203B496001FA27F /* Assets.xcassets */; };
 		08563E622203B496001FA27F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08563E602203B496001FA27F /* LaunchScreen.storyboard */; };
+		08994D5422242CE800838922 /* SkinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08994D5322242CE800838922 /* SkinViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +20,10 @@
 		08563E542203B493001FA27F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08563E562203B493001FA27F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		08563E592203B493001FA27F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		08563E5C2203B493001FA27F /* spiid.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = spiid.xcdatamodel; sourceTree = "<group>"; };
 		08563E5E2203B496001FA27F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08563E612203B496001FA27F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		08563E632203B496001FA27F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08994D5322242CE800838922 /* SkinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkinViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +58,11 @@
 			children = (
 				08563E542203B493001FA27F /* AppDelegate.swift */,
 				08563E562203B493001FA27F /* ViewController.swift */,
+				08994D5322242CE800838922 /* SkinViewController.swift */,
 				08563E582203B493001FA27F /* Main.storyboard */,
 				08563E5E2203B496001FA27F /* Assets.xcassets */,
 				08563E602203B496001FA27F /* LaunchScreen.storyboard */,
 				08563E632203B496001FA27F /* Info.plist */,
-				08563E5B2203B493001FA27F /* spiid.xcdatamodeld */,
 			);
 			path = spiid;
 			sourceTree = "<group>";
@@ -140,7 +140,7 @@
 			files = (
 				08563E572203B493001FA27F /* ViewController.swift in Sources */,
 				08563E552203B493001FA27F /* AppDelegate.swift in Sources */,
-				08563E5D2203B493001FA27F /* spiid.xcdatamodeld in Sources */,
+				08994D5422242CE800838922 /* SkinViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,19 +342,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		08563E5B2203B493001FA27F /* spiid.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				08563E5C2203B493001FA27F /* spiid.xcdatamodel */,
-			);
-			currentVersion = 08563E5C2203B493001FA27F /* spiid.xcdatamodel */;
-			path = spiid.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 08563E492203B492001FA27F /* Project object */;
 }
