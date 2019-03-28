@@ -22,23 +22,25 @@ class SkinViewController: UIViewController {
     
     @IBAction func snin0ButtonTouched(_ sender: UIButton) {
         currentSkin?.valueChanged(newValue: 0)
+        UserDefaults.standard.set(0, forKey: "savedSkin")
     }
     
     @IBAction func skin1ButtonTouched(_ sender: UIButton) {
         currentSkin?.valueChanged(newValue: 1)
+        UserDefaults.standard.set(1, forKey: "savedSkin")
     }
     
-    @IBAction func skin2ButtonTouched(_ sender: UIButton) {
-        currentSkin?.valueChanged(newValue: 2)
-    }
-    
-    @IBAction func skin3ButtonTouched(_ sender: UIButton) {
-        currentSkin?.valueChanged(newValue: 3)
-    }
-    
-    @IBAction func skin4ButtonTouched(_ sender: UIButton) {
-        currentSkin?.valueChanged(newValue: 4)
-    }
+//    @IBAction func skin2ButtonTouched(_ sender: UIButton) {
+//        currentSkin?.valueChanged(newValue: 2)
+//    }
+//
+//    @IBAction func skin3ButtonTouched(_ sender: UIButton) {
+//        currentSkin?.valueChanged(newValue: 3)
+//    }
+//
+//    @IBAction func skin4ButtonTouched(_ sender: UIButton) {
+//        currentSkin?.valueChanged(newValue: 4)
+//    }
     
 }
 

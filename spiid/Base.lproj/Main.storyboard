@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -98,86 +98,34 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="xGQ-T5-8Ix"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xoR-Ar-EeE">
-                                <rect key="frame" x="162.5" y="70" width="50" height="50"/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ov2-rZ-KYG">
+                                <rect key="frame" x="162.5" y="100" width="50" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="HoL-Ob-7pa"/>
-                                    <constraint firstAttribute="width" constant="50" id="tLp-RR-ikE"/>
+                                    <constraint firstAttribute="width" constant="50" id="jIA-p8-a2c"/>
+                                    <constraint firstAttribute="height" constant="50" id="og3-jp-hG1"/>
                                 </constraints>
-                                <state key="normal" title="tap">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="snin0ButtonTouched:" destination="glJ-fm-Nqh" eventType="touchUpInside" id="alf-zd-R2L"/>
-                                </connections>
+                                <state key="normal" title="Button" image="skin0"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fkb-DI-iuY">
-                                <rect key="frame" x="162.5" y="170" width="50" height="50"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="er0-k0-9kT">
+                                <rect key="frame" x="162.5" y="200" width="50" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="XUR-Dg-BwZ"/>
-                                    <constraint firstAttribute="width" constant="50" id="wYo-vH-aUG"/>
+                                    <constraint firstAttribute="height" constant="50" id="1Tk-Xa-xhR"/>
+                                    <constraint firstAttribute="width" constant="50" id="6IO-Pu-YKC"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Button" image="skin1"/>
                                 <connections>
-                                    <action selector="skin1ButtonTouched:" destination="glJ-fm-Nqh" eventType="touchUpInside" id="Tzo-q9-YmE"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQf-s8-w2q">
-                                <rect key="frame" x="162.5" y="370" width="50" height="50"/>
-                                <color key="backgroundColor" red="0.0" green="0.99753576519999998" blue="0.0060961446720000003" alpha="1" colorSpace="deviceRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="J5n-y5-nMh"/>
-                                    <constraint firstAttribute="height" constant="50" id="a9z-LA-IPs"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="skin3ButtonTouched:" destination="glJ-fm-Nqh" eventType="touchUpInside" id="yOP-ZF-YCS"/>
-                                    <action selector="skin3ButtonTouched:" destination="WRd-OD-yoP" eventType="touchUpInside" id="zoT-oZ-MmW"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVO-s9-pUA">
-                                <rect key="frame" x="162.5" y="470" width="50" height="50"/>
-                                <color key="backgroundColor" red="0.56164320860000005" green="0.56164320860000005" blue="0.56164320860000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="fLR-Nu-nxq"/>
-                                    <constraint firstAttribute="width" constant="50" id="lZw-OE-Xk0"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="skin4ButtonTouched:" destination="glJ-fm-Nqh" eventType="touchUpInside" id="Hhv-Pe-ZUE"/>
-                                    <action selector="skin4ButtonTouched:" destination="WRd-OD-yoP" eventType="touchUpInside" id="hnH-AA-sAB"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSK-71-9o5">
-                                <rect key="frame" x="162.5" y="270" width="50" height="50"/>
-                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="3Rd-CZ-44K"/>
-                                    <constraint firstAttribute="height" constant="50" id="Ign-fY-UsM"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="skin2ButtonTouched:" destination="WRd-OD-yoP" eventType="touchUpInside" id="Usl-DL-alF"/>
-                                    <action selector="skin2ButtonTouched:" destination="glJ-fm-Nqh" eventType="touchUpInside" id="sQw-UJ-qae"/>
+                                    <action selector="skin1ButtonTouched:" destination="glJ-fm-Nqh" eventType="touchUpInside" id="jfu-i6-hYX"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="aSK-71-9o5" firstAttribute="top" secondItem="Fkb-DI-iuY" secondAttribute="bottom" constant="50" id="34e-jz-iMz"/>
-                            <constraint firstItem="oQf-s8-w2q" firstAttribute="top" secondItem="aSK-71-9o5" secondAttribute="bottom" constant="50" id="39I-D0-LUW"/>
-                            <constraint firstItem="oQf-s8-w2q" firstAttribute="centerX" secondItem="mVq-wt-5hE" secondAttribute="centerX" id="68z-i0-A5C"/>
+                            <constraint firstItem="Ov2-rZ-KYG" firstAttribute="top" secondItem="mVq-wt-5hE" secondAttribute="top" constant="100" id="1j8-RH-XMT"/>
                             <constraint firstItem="By8-iL-RKG" firstAttribute="top" secondItem="09V-nt-HAa" secondAttribute="top" id="8LC-35-diq"/>
-                            <constraint firstItem="YVO-s9-pUA" firstAttribute="top" secondItem="oQf-s8-w2q" secondAttribute="bottom" constant="50" id="9jz-yq-R5c"/>
-                            <constraint firstItem="aSK-71-9o5" firstAttribute="centerX" secondItem="mVq-wt-5hE" secondAttribute="centerX" id="EbQ-Ea-suc"/>
-                            <constraint firstItem="xoR-Ar-EeE" firstAttribute="top" secondItem="09V-nt-HAa" secondAttribute="top" constant="50" id="G1g-ie-8TD"/>
-                            <constraint firstItem="Fkb-DI-iuY" firstAttribute="centerX" secondItem="mVq-wt-5hE" secondAttribute="centerX" id="JXb-Fn-weK"/>
-                            <constraint firstItem="xoR-Ar-EeE" firstAttribute="centerX" secondItem="mVq-wt-5hE" secondAttribute="centerX" id="JuM-cI-Wo1"/>
-                            <constraint firstItem="Fkb-DI-iuY" firstAttribute="top" secondItem="xoR-Ar-EeE" secondAttribute="bottom" constant="50" id="ZqD-mf-2Iv"/>
+                            <constraint firstItem="Ov2-rZ-KYG" firstAttribute="centerX" secondItem="mVq-wt-5hE" secondAttribute="centerX" id="O8t-9u-CYD"/>
+                            <constraint firstItem="er0-k0-9kT" firstAttribute="centerX" secondItem="mVq-wt-5hE" secondAttribute="centerX" id="WhU-qy-he1"/>
                             <constraint firstItem="By8-iL-RKG" firstAttribute="leading" secondItem="09V-nt-HAa" secondAttribute="leading" constant="16" id="hZx-Dc-1fL"/>
-                            <constraint firstItem="YVO-s9-pUA" firstAttribute="centerX" secondItem="mVq-wt-5hE" secondAttribute="centerX" id="lQd-kB-bmG"/>
+                            <constraint firstItem="er0-k0-9kT" firstAttribute="top" secondItem="Ov2-rZ-KYG" secondAttribute="bottom" constant="50" id="sg1-xp-uqp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="09V-nt-HAa"/>
                     </view>
@@ -188,4 +136,8 @@
             <point key="canvasLocation" x="1005.6" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="skin0" width="1317" height="1331"/>
+        <image name="skin1" width="275" height="349"/>
+    </resources>
 </document>

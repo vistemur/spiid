@@ -12,6 +12,7 @@ final class ViewController: UIViewController {
     
     var classicalHighScore = 0
     var savedSkin = 0
+    var skin = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +29,8 @@ final class ViewController: UIViewController {
         } else {
             savedSkin = 0
         }
+        
+        skin = "skin" + String(savedSkin)
     }
     
     @IBOutlet weak var skinsButton: UIButton!
@@ -68,6 +71,7 @@ final class ViewController: UIViewController {
                 self.timeIsOut()
             }
         }
+        
     }
     
     // ToDo: time is out
@@ -95,8 +99,7 @@ final class ViewController: UIViewController {
                                                 y: Int.random(in: 5...(Int(height) - 50)),
                                                 width: 50,
                                                 height: 50))
-        playButton.setTitle("tap", for: .normal)
-        playButton.backgroundColor = UIColor.red
+        playButton.setImage(UIImage(named: skin), for: .normal)
         playButton.addTarget(self, action: #selector(playButtonAction), for: .touchUpInside)
         self.view.addSubview(playButton)
         amountOfButtonsOnSreen += 1
