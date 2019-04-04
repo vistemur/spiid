@@ -18,6 +18,7 @@ class SkinViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
     
     @IBAction func snin0ButtonTouched(_ sender: UIButton) {

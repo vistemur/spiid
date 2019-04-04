@@ -39,9 +39,9 @@ final class ViewController: UIViewController {
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var classicalHighScoreLabel: UILabel!
     
-    public var classicalScore = 0
-    public var game = false
-    public var amountOfButtonsOnSreen = 0;
+    var classicalScore = 0
+     var game = false
+     var amountOfButtonsOnSreen = 0
     
     // TODO: startButtonPressed
     @IBAction func startButtunPressed(_ sender: UIButton) {
