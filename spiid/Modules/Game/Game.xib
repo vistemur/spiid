@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GameViewController" customModule="spiid" customModuleProvider="target">
+            <connections>
+                <outlet property="gameFieldView" destination="YLl-eN-e4a" id="CmT-Ws-46S"/>
+                <outlet property="scoreLabel" destination="Goz-nC-b7i" id="nZe-er-xZc"/>
+                <outlet property="timeLabel" destination="3fb-qL-PcY" id="ALE-b9-Jmj"/>
+                <outlet property="view" destination="iN0-l3-epB" id="0k6-Hn-FoA"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3fb-qL-PcY">
+                    <rect key="frame" x="166.5" y="50" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YLl-eN-e4a">
+                    <rect key="frame" x="0.0" y="90" width="375" height="577"/>
+                    <color key="backgroundColor" red="0.89411764705882346" green="0.89411764705882346" blue="0.89411764705882346" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cr1-G2-G1K">
+                    <rect key="frame" x="30" y="50" width="34" height="30"/>
+                    <state key="normal" title="Back"/>
+                    <connections>
+                        <action selector="backButtonPressed:" destination="-1" eventType="touchUpInside" id="e8x-bc-BqN"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Goz-nC-b7i">
+                    <rect key="frame" x="303" y="50" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="YLl-eN-e4a" secondAttribute="bottom" id="Dgv-s1-Fk1"/>
+                <constraint firstItem="Goz-nC-b7i" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="30" id="FdW-e6-XeG"/>
+                <constraint firstItem="3fb-qL-PcY" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="LTM-4O-1xQ"/>
+                <constraint firstItem="Cr1-G2-G1K" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="30" id="LWb-2t-p8e"/>
+                <constraint firstItem="YLl-eN-e4a" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Oe8-Bq-pB3"/>
+                <constraint firstItem="3fb-qL-PcY" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="30" id="Qi4-an-wBL"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Goz-nC-b7i" secondAttribute="trailing" constant="30" id="bCi-qI-paK"/>
+                <constraint firstItem="Cr1-G2-G1K" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="30" id="fsp-cc-uz9"/>
+                <constraint firstItem="YLl-eN-e4a" firstAttribute="top" secondItem="Cr1-G2-G1K" secondAttribute="bottom" constant="10" id="nUh-i1-Yag"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="YLl-eN-e4a" secondAttribute="trailing" id="vkm-NL-WLd"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="47.826086956521742" y="35.491071428571423"/>
+        </view>
+    </objects>
+</document>

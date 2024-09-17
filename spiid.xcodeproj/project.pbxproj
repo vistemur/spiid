@@ -10,9 +10,19 @@
 		08563E552203B493001FA27F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08563E542203B493001FA27F /* AppDelegate.swift */; };
 		08563E572203B493001FA27F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08563E562203B493001FA27F /* ViewController.swift */; };
 		08563E5A2203B493001FA27F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08563E582203B493001FA27F /* Main.storyboard */; };
-		08563E5D2203B493001FA27F /* spiid.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 08563E5B2203B493001FA27F /* spiid.xcdatamodeld */; };
 		08563E5F2203B496001FA27F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08563E5E2203B496001FA27F /* Assets.xcassets */; };
 		08563E622203B496001FA27F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08563E602203B496001FA27F /* LaunchScreen.storyboard */; };
+		0864F820224FDA2B0013161C /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0864F81F224FDA2B0013161C /* StartViewController.swift */; };
+		0864F822224FDA4E0013161C /* Start.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0864F821224FDA4E0013161C /* Start.xib */; };
+		08994D5422242CE800838922 /* SkinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08994D5322242CE800838922 /* SkinViewController.swift */; };
+		08C38A45224FF08700F8AD20 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C38A44224FF08700F8AD20 /* GameViewController.swift */; };
+		08C38A47224FF09000F8AD20 /* Game.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08C38A46224FF09000F8AD20 /* Game.xib */; };
+		08C38A4A2250027A00F8AD20 /* Skin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C38A492250027A00F8AD20 /* Skin.swift */; };
+		08C38A4E2250058200F8AD20 /* SkinsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C38A4C2250058200F8AD20 /* SkinsTableViewCell.swift */; };
+		08C38A4F2250058200F8AD20 /* SkinsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08C38A4D2250058200F8AD20 /* SkinsTableViewCell.xib */; };
+		08E0073A224FE3BA00253F9C /* SkinsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E00739224FE3BA00253F9C /* SkinsViewController.swift */; };
+		08E0073C224FE3DB00253F9C /* Skins.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08E0073B224FE3DB00253F9C /* Skins.xib */; };
+		08F3FD6922527706004A6A98 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F3FD6822527706004A6A98 /* AppSettings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +30,20 @@
 		08563E542203B493001FA27F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08563E562203B493001FA27F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		08563E592203B493001FA27F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		08563E5C2203B493001FA27F /* spiid.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = spiid.xcdatamodel; sourceTree = "<group>"; };
 		08563E5E2203B496001FA27F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08563E612203B496001FA27F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		08563E632203B496001FA27F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0864F81F224FDA2B0013161C /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		0864F821224FDA4E0013161C /* Start.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Start.xib; sourceTree = "<group>"; };
+		08994D5322242CE800838922 /* SkinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkinViewController.swift; sourceTree = "<group>"; };
+		08C38A44224FF08700F8AD20 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		08C38A46224FF09000F8AD20 /* Game.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Game.xib; sourceTree = "<group>"; };
+		08C38A492250027A00F8AD20 /* Skin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skin.swift; sourceTree = "<group>"; };
+		08C38A4C2250058200F8AD20 /* SkinsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkinsTableViewCell.swift; sourceTree = "<group>"; };
+		08C38A4D2250058200F8AD20 /* SkinsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SkinsTableViewCell.xib; sourceTree = "<group>"; };
+		08E00739224FE3BA00253F9C /* SkinsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkinsViewController.swift; sourceTree = "<group>"; };
+		08E0073B224FE3DB00253F9C /* Skins.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Skins.xib; sourceTree = "<group>"; };
+		08F3FD6822527706004A6A98 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +76,81 @@
 		08563E532203B493001FA27F /* spiid */ = {
 			isa = PBXGroup;
 			children = (
-				08563E542203B493001FA27F /* AppDelegate.swift */,
+				0864F81B224FD98B0013161C /* SupportingFiles */,
 				08563E562203B493001FA27F /* ViewController.swift */,
+				08994D5322242CE800838922 /* SkinViewController.swift */,
 				08563E582203B493001FA27F /* Main.storyboard */,
-				08563E5E2203B496001FA27F /* Assets.xcassets */,
-				08563E602203B496001FA27F /* LaunchScreen.storyboard */,
-				08563E632203B496001FA27F /* Info.plist */,
-				08563E5B2203B493001FA27F /* spiid.xcdatamodeld */,
+				0864F81C224FD9BF0013161C /* Modules */,
+				0864F81D224FD9DD0013161C /* Resources */,
+				08C38A492250027A00F8AD20 /* Skin.swift */,
 			);
 			path = spiid;
+			sourceTree = "<group>";
+		};
+		0864F81B224FD98B0013161C /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				08563E632203B496001FA27F /* Info.plist */,
+				08563E542203B493001FA27F /* AppDelegate.swift */,
+				08F3FD6822527706004A6A98 /* AppSettings.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		0864F81C224FD9BF0013161C /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				08C38A43224FF06700F8AD20 /* Game */,
+				08E00738224FE3A000253F9C /* Skins */,
+				0864F81E224FDA090013161C /* Start */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		0864F81D224FD9DD0013161C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				08563E602203B496001FA27F /* LaunchScreen.storyboard */,
+				08563E5E2203B496001FA27F /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0864F81E224FDA090013161C /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				0864F821224FDA4E0013161C /* Start.xib */,
+				0864F81F224FDA2B0013161C /* StartViewController.swift */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+		08C38A43224FF06700F8AD20 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				08C38A46224FF09000F8AD20 /* Game.xib */,
+				08C38A44224FF08700F8AD20 /* GameViewController.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		08C38A4B2250052D00F8AD20 /* SkinsTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				08C38A4D2250058200F8AD20 /* SkinsTableViewCell.xib */,
+				08C38A4C2250058200F8AD20 /* SkinsTableViewCell.swift */,
+			);
+			path = SkinsTableViewCell;
+			sourceTree = "<group>";
+		};
+		08E00738224FE3A000253F9C /* Skins */ = {
+			isa = PBXGroup;
+			children = (
+				08C38A4B2250052D00F8AD20 /* SkinsTableViewCell */,
+				08E0073B224FE3DB00253F9C /* Skins.xib */,
+				08E00739224FE3BA00253F9C /* SkinsViewController.swift */,
+			);
+			path = Skins;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +211,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0864F822224FDA4E0013161C /* Start.xib in Resources */,
 				08563E622203B496001FA27F /* LaunchScreen.storyboard in Resources */,
+				08C38A4F2250058200F8AD20 /* SkinsTableViewCell.xib in Resources */,
+				08E0073C224FE3DB00253F9C /* Skins.xib in Resources */,
 				08563E5F2203B496001FA27F /* Assets.xcassets in Resources */,
+				08C38A47224FF09000F8AD20 /* Game.xib in Resources */,
 				08563E5A2203B493001FA27F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,8 +229,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				08563E572203B493001FA27F /* ViewController.swift in Sources */,
+				08C38A4A2250027A00F8AD20 /* Skin.swift in Sources */,
+				0864F820224FDA2B0013161C /* StartViewController.swift in Sources */,
 				08563E552203B493001FA27F /* AppDelegate.swift in Sources */,
-				08563E5D2203B493001FA27F /* spiid.xcdatamodeld in Sources */,
+				08994D5422242CE800838922 /* SkinViewController.swift in Sources */,
+				08F3FD6922527706004A6A98 /* AppSettings.swift in Sources */,
+				08C38A45224FF08700F8AD20 /* GameViewController.swift in Sources */,
+				08C38A4E2250058200F8AD20 /* SkinsTableViewCell.swift in Sources */,
+				08E0073A224FE3BA00253F9C /* SkinsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +384,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QU6627WB94;
-				INFOPLIST_FILE = spiid/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/spiid/SupportingFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -307,7 +403,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QU6627WB94;
-				INFOPLIST_FILE = spiid/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/spiid/SupportingFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -342,19 +438,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		08563E5B2203B493001FA27F /* spiid.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				08563E5C2203B493001FA27F /* spiid.xcdatamodel */,
-			);
-			currentVersion = 08563E5C2203B493001FA27F /* spiid.xcdatamodel */;
-			path = spiid.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 08563E492203B492001FA27F /* Project object */;
 }
