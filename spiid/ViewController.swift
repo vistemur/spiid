@@ -1,11 +1,3 @@
-//
-//  ViewController.swift
-//  spiid
-//
-//  Created by роман поздняков on 01/02/2019.
-//  Copyright © 2019 romchick. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
